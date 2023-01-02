@@ -83,7 +83,7 @@ body{
 }
 
 .main__list{
-	list-style-type: none;
+	list-style: none;
 	width: max-content;
 }
 
@@ -91,7 +91,7 @@ body{
 	position: relative;
 	padding: 10px 15px;
 	margin-bottom: 15px;
-	cursor: move;
+	cursor: pointer;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
