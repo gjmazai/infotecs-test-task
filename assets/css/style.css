@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: "Tahoma", sans-serif;
+	margin: 0;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+body{
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+.header__container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__top{
+	height: 100px;
+}
+
+
+.header__title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 67px;
+	transform: translateY(50%);
+}
+
+.header__form{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	height: 200px;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__top-input{
+	width: 350px;
+	height: 40px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+	border: 3px solid aquamarine;
+}
+
+.header__top-input::placeholder{
+	padding-left: 10px;
+	color:rgb(105, 104, 104)
+}
+
+.header__top-btn{
+	width: 150px;
+	height: 50px;
+	background-color: #fff;
+	border: 3px solid aquamarine;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.main__list{
+	list-style-type: none;
+	width: max-content;
+}
+
+.main__item{
+	position: relative;
+	padding: 10px 15px;
+	margin-bottom: 15px;
+	cursor: move;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 20px;
+	border: solid 3px aquamarine;
+	border-radius: 5px;
+}
+
+.main__item:last-child {
+	margin-bottom: 0;
+}
+
+.main__item-description{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	height: max-content;
+	width:  850px;
+	padding: 20px 25px;
+	transform: translateX(450px);
+	border: solid 3px aquamarine;
+	opacity: 0;
+	visibility: hidden;
+	cursor: auto;
+	transition: 0.51s opacity ease-in, 0.51s visibility ease-in;
+	/* transition: all 1s ease; */
+	font-family: "Tahoma", sans-serif;
+	font-size: 38px;
+	line-height: 60px;
+}
+
+.main__item:hover .main__item-description{
+	opacity: 1;
+	visibility: visible;
+}
+
+.selected{
+	background-color: aquamarine;
+	opacity: 0.6;
+}
