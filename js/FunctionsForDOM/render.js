@@ -1,13 +1,13 @@
-export default function Render({ title, brand, category, description, rating, price }) {
+export default function render({ title, brand, category, description, rating, price }) {
 	// получаем необходимые элементы из DOM-дерева и создаем новые для вставки на страницу
 	const listBlock = document.getElementsByClassName("main__list")[0];
-	const mainDiscriptionBlock = document.getElementsByClassName("main__description")[0];
 	const itemTitle = document.createElement("li");
-	const itemDesription = document.createElement("div");
+	const itemDesription = document.createElement("p");
 
 	// Заполняем элементы списка названием продуктов и придаем им className
 	itemTitle.innerHTML = title;
 	itemTitle.className = "main__item";
+	itemTitle.draggable = true;
 	listBlock.append(itemTitle);
 
 	// Заполняем описание продуктов и придаем им classNAme
