@@ -20,10 +20,18 @@
 				<div class="header__bot">
 					<form method="get" class="header__form">
 						<input type="text"
-						placeholder="Введите количество..."
-						class="header__top-input">
-						<button class="header__top-btn">Загрузить записи</button>
+						placeholder="Введите количество загружаемых записей..."
+						class="header__bot-input">
+						<button class="header__bot-btn">Загрузить записи</button>
 					</form>
+					<div class="header__select">
+						<select name="Сортировка по..." id="header__drop-select">
+							<option disabled value="default" selected>Сортировка по...</option>
+							<option class="header__option" value="price">Цене</option>
+							<option class="header__option" value="category">Категории</option>
+							<option class="header__option" value="">Отменить сортировку</option>
+						</select>
+					</div>
 				</div>
 			</div>
 		</div>
