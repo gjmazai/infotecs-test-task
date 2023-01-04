@@ -1,3 +1,4 @@
+// Реализация хука - обрабатывает возможные ошибки при запросе на сервер
 export const useFetching = (callback) => {
 	const fetching = async () => {
 		try {
