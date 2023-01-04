@@ -1,6 +1,8 @@
+// класс для взаимодействия с API
 export default class PostService {
-	static async getUsers(limit = 10) {
-		const responce = await fetch(`https://dummyjson.com/products?limit=${limit}`);
+	// статик-метод для загрузки данных с fakeAPI
+	static async getProducts() {
+		const responce = await fetch(`https://dummyjson.com/products`);
 		return responce;
 	}
 }
